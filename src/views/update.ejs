@@ -1,0 +1,30 @@
+<%- include('layout/header.ejs') %>
+
+<div class="container mt-4">
+    <h2>Editar Estudante</h2>
+
+    <form action="/update/<%= est.id %>" method="POST">
+        <div class="mb-3">
+            <label>Nome:</label>
+            <input type="text" name="nome" class="form-control" value="<%= est.nome %>">
+        </div>
+
+        <div class="mb-3">
+            <label>Idade:</label>
+            <input type="number" name="idade" class="form-control" value="<%= est.idade %>">
+        </div>
+
+        <div class="mb-3">
+            <label>Série:</label>
+            <input type="text" name="serie" class="form-control" value="<%= est.serie %>">
+        </div>
+
+        <div class="mb-3">
+            <label>Telefone:</label>
+            <input type="text" name="telefone" class="form-control" value="<%= est.telefone %>">
+        </div>
+
+        <button class="btn btn-primary">Salvar</button>
+        <a href="/" class="btn btn-secondary">Cancelar</a>
+    </form>
+</div>

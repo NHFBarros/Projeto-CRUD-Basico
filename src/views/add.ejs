@@ -1,0 +1,51 @@
+<%- include('layout/header.ejs')%>
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>add</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row my-4">
+                <div class="col col-lg-12 d-flex justify-content-center">
+                    <div class="border border-secondary">
+                        <div class="bg-primary text-white p-3 text-center border border-info">
+                            <h1>Adicionar Dado</h1>
+                        </div>
+                        <form action="/" method="post" class="px-5">
+                            <div class="pb-2 pt-4">
+                                <label for="nome">Nome:</label><br>
+                                <input type="text" name="nome" id="nome"><br>
+                            </div>
+
+                            <div class="py-2">
+                                <label for="idade">Idade:</label><br>
+                                <input type="number" name="idade" id="idade"><br>
+                            </div>
+
+                            <div class="py-2">
+                                <label for="serie">Serie:</label><br>
+                                <input type="text" name="serie" id="serie"><br>
+                            </div>
+                            
+                            <div class="py-2">
+                                <label for="telefone">Telefone:</label><br>
+                                <input type="number" name="telefone" id="telefone"><br>
+                            </div>
+
+                            <div class="d-flex justify-content-center pt-3 pb-2">
+                                <button type="submit" class="btn btn-primary">Adicionar</button>
+                            </div>
+                        </form>
+                        <div class="py-2 d-flex justify-content-center pb-4">
+                            <a href="/" class="btn btn-secondary">Voltar</a>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+        </div>
+    </body>
+</html>
